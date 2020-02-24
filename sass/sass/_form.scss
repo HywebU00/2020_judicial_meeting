@@ -20,7 +20,7 @@ select::-ms-expand {
 
 .form_grid {
     font-size: .938em;
-    margin: .5em;
+    margin: .5em 0;
     border-top: 1px solid #DDD;
     .form_grp {
         border-bottom: 1px dashed #DDD;
@@ -340,7 +340,7 @@ input[type="tel"] {
 }
 button,
 input[type="button"],
-    {
+{
     @extend %btn;
     @include btn_setting($form-focus, #FFF);
 }

@@ -39,8 +39,15 @@ body {
     @include screen('mobile') {
         padding-top: 55px;
     }
-    h2 {
-        line-height: 1.25em;
+    .pageTitle {
+        line-height: 1.05em;
+        font-size: 1.5rem;
+        color: $darkColor;
+    }
+    .pageTitleDate{
+        color: #666;
+        font-size: 1.125rem;
+        margin-top: -.5em;
     }
 }
 ////////////////////////////////////////////////////////////
@@ -48,9 +55,19 @@ body {
 .innerpage {
     padding-top: 2em;
     @include screen('mobile') {
-        padding-top: 5em;
+        padding-top: 140px;
     }
     >.container {
         @include gutter(); //gutter 代表左右要留白
+    }
+}
+.sp .googlelogin {
+    text-align: center;
+    margin: 2em 0;
+    #BTNSubscribe{
+        background: url(../images/btn_google_signin_dark_normal_web.png) no-repeat center center;
+        width: 191px;
+        height: 46px;
+        border:0;
     }
 }
